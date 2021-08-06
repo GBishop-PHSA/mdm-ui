@@ -52,9 +52,9 @@ export class McEnumerationListWithCategoryComponent implements OnInit {
   enumsCount: number;
   total: number;
   displayItems: any[];
-  categories: any[] = [];
-  allRecords: any[];
-  allRecordsWithGroups: any[];
+  categories = [];
+  allRecords = [];
+  allRecordsWithGroups = [];
 
   hasCategory = false;
   showEdit = false;

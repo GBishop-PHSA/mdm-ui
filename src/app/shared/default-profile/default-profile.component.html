@@ -120,7 +120,8 @@ SPDX-License-Identifier: Apache-2.0
     <tr *ngIf="isInControlList('dataType')">
       <th class="detailsRowHeader">Data Type</th>
       <td>
-        <mdm-element-data-type
+        <mdm-element-data-type 
+        *ngIf="catalogueItem"
         [elementDataType]="catalogueItem.dataType ? catalogueItem.dataType : catalogueItem"
         [mcParentDataModel]="catalogueItem"
       >
